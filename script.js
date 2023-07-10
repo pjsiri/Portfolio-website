@@ -1,11 +1,3 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-// init AOS animation
-AOS.init({
-    duration: 1000,
-    offset: 100,
-});
 // Mobile navigation bar function
 var sidemenu = document.getElementById("sidemenu");
 
