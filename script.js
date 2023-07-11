@@ -57,13 +57,3 @@ function downloadPDF() {
 
 var downloadBtn = document.getElementById('downloadBtn');
 downloadBtn.addEventListener('click', downloadPDF);
-
-// View PDF
-function viewPDF() {
-  var fileUrl = 'Files/Prom-Jack-Sirisukha-Resume.pdf';
-
-  var newWindow = window.open(fileUrl, '_blank');
-  newWindow.focus();
-}
-var viewBtn = document.getElementById('viewBtn');
-viewBtn.addEventListener('click', viewPDF);
