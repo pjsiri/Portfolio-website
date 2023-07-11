@@ -36,7 +36,8 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-.navigationBar{
+
+.navigationBar img{
     margin-left: 40px;
 }
 .container{
@@ -132,7 +133,6 @@ nav ul li a:hover::after{
   }
   
   #scrollToTopButton i {
-    transform: rotate(-45deg);
   }
   
   #scrollToTopButton:hover {
@@ -445,6 +445,14 @@ nav .fas{
         font-size: 25px;
     }
     /* -----Mobile--NAV------- */
+    .navigationBar img{
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+    .navigationBar i{
+        margin-top: 15px;
+        margin-right: 40px;
+    }
     nav ul{
         background: linear-gradient(rgba(0,0,0,0.6),#278ed3);
         position: fixed;
@@ -495,6 +503,14 @@ nav .fas{
     .header-text{
         margin-top: 100%;
         font-size: 15px;
+    }
+    .navigationBar img{
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+    .navigationBar i{
+        margin-top: 15px;
+        margin-right: 40px;
     }
     .header-text h1{
         font-size: 18px;
