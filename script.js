@@ -1,11 +1,14 @@
 // Mobile navigation bar function
 var sidemenu = document.getElementById("sidemenu");
+var menuIcon = document.querySelector(".fa-bars");
 
     function openmenu(){
         sidemenu.style.right = "0";
+        menuIcon.style.display = "none";
     }
     function closemenu(){
         sidemenu.style.right = "-200px";
+        menuIcon.style.display = "block";
     }
 
 // Send Form Function
@@ -35,3 +38,32 @@ window.addEventListener("scroll", function() {
       scrollButton.classList.remove("show"); // Remove the "show" class to fade out the scroll button
     }
   });
+
+// Download
+function downloadPDF() {
+  var fileUrl = 'Files/Prom-Jack-Sirisukha-Resume.pdf';
+  
+  var link = document.createElement('a');
+  link.href = fileUrl;
+  
+  link.setAttribute('download', 'Prom-Jack-Sirisukha-Resume.pdf');
+  
+  document.body.appendChild(link);
+  
+  link.click();
+  
+  document.body.removeChild(link);
+}
+
+var downloadBtn = document.getElementById('downloadBtn');
+downloadBtn.addEventListener('click', downloadPDF);
+
+// View PDF
+function viewPDF() {
+  var fileUrl = 'Files/Prom-Jack-Sirisukha-Resume.pdf';
+
+  var newWindow = window.open(fileUrl, '_blank');
+  newWindow.focus();
+}
+var viewBtn = document.getElementById('viewBtn');
+viewBtn.addEventListener('click', viewPDF);
