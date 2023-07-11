@@ -421,7 +421,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 790px){
     
     #header{
         background-image: url(Images/bg1Phone.jpeg);
@@ -439,6 +439,9 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 25px;
+    }
+    .layer{
+        font-size: 9.5px;
     }
     /* -----Mobile--NAV------- */
     .navigationBar img{
