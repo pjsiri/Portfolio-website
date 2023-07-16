@@ -38,22 +38,3 @@ window.addEventListener("scroll", function() {
       scrollButton.classList.remove("show"); // Remove the "show" class to fade out the scroll button
     }
   });
-
-// Download
-function downloadPDF() {
-  var fileUrl = 'Files/Prom-Jack-Sirisukha-Resume.pdf';
-  
-  var link = document.createElement('a');
-  link.href = fileUrl;
-  
-  link.setAttribute('download', 'Prom-Jack-Sirisukha-Resume.pdf');
-  
-  document.body.appendChild(link);
-  
-  link.click();
-  
-  document.body.removeChild(link);
-}
-
-var downloadBtn = document.getElementById('downloadBtn');
-downloadBtn.addEventListener('click', downloadPDF);
