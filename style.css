@@ -22,7 +22,8 @@ html{
 }
 
 body{
-    background: #2C3439;
+    /* background: #2C3439; */
+    background: #070707;
     color: #ffffff;
 }
 #header{
@@ -35,10 +36,6 @@ body{
     overflow: hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-.navigationBar{
-    background: #070707;
-    background-color: #070707;
 }
 .navigationBar img{
     margin-left: 40px;
@@ -141,6 +138,7 @@ nav ul li a:hover::after{
   
 /* ----------about------------- */
 #about{
+    background: #2C3439;
     padding: 80px 0;
     color: #ababab;
 }
@@ -221,6 +219,7 @@ nav ul li a:hover::after{
 
 /* ----------skills-------------- */
 #skills{
+    background: #2C3439;
     padding: 30px 0;
 }
 .skills-list{
@@ -260,6 +259,7 @@ nav ul li a:hover::after{
 
 /* ---------portfolio--------- */
 #portfolio{
+    background: #2C3439;
     padding: 50px 0;
 }
 .project-list{
@@ -344,6 +344,9 @@ nav ul li a:hover::after{
 }
 
 /* ------------contact------------ */
+#contact{
+    background: #2C3439;
+}
 .contact-left{
     flex-basis: 35%;
 }
