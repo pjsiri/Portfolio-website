@@ -36,6 +36,9 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+.navigationBar{
+    background-color: #070707;
+}
 .navigationBar img{
     margin-left: 40px;
 }
