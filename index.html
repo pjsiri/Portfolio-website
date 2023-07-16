@@ -6,28 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PJ Sirisukha - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
     <script src="https://kit.fontawesome.com/68979e99c9.js" crossorigin="anonymous"></script>
     <script defer src="app.js"></script>
 </head>
 <body>
     
-<div class="navigationBar" class="hidden">
-    <nav>
-        <img src="Images/pj-logo.png" alt="logo" class="logo" >
-        <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
-</div>
 
 <div id="header" class="header">
+    <div class="navigationBar">
+        <nav>
+            <img src="Images/pj-logo.png" alt="logo" class="logo" >
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
     <div class="container">
         
         <div class="header-text">
@@ -42,7 +41,7 @@
     </div>
     
     <div class="container">
-        <a href="https://drive.google.com/file/d/1O9f5SHth6Pj7gLVMoDvncmCix-XX1nVR/view?usp=sharing" target="_blank" class="btn btn2">View My CV</a>
+        <a href="https://drive.google.com/file/d/13KaG_H3By-XvBbzPTD0EE6qr_nIayQzI/view?usp=sharing" target="_blank" class="btn btn2">View My CV</a>
     </div>
     
 
@@ -51,14 +50,13 @@
     <button id="scrollToTopButton" title="Scroll to Top">
         <i class="fas fa-arrow-up"></i>
       </button>
-    <div class="breaker"></div>
 </a>
 <!------------about-------------->
-<div id="about" class="hidden">
+<div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="Images/profile.png" alt="profilePicture">
+                <img src="Images/profile1.jpg" alt="profilePicture">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -98,7 +96,9 @@
                 <!-- Education -->
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>Auckland University of Technology (2022-2024)</span><br>Bachelor of Computer and Information Sciences majoring in Computer Science and Software Development</li>
+                        
+                        <li><img src="Images/icons/AUTlogo.jpg" alt="AUT Logo"><br><span>Auckland University of Technology (2022-2024)</span><br>Bachelor of Computer and Information Sciences - <br>
+                             majoring in Computer Science and Software Development</li>
                     </ul>
                 </div>
 
@@ -116,11 +116,11 @@
     </div>
 </div>
 <!-- --------skills--------- -->
-<div id="services" class="hidden">
+<div id="skills">
     <div class="container">
         <h1 class="sub-title">My Main Skills</h1>
-        <div class="services-list">
-            <div class="service" >
+        <div class="skills-list">
+            <div class="skill" >
                 <i class="fa-brands fa-java"></i>
                 <h2>Java Programming</h2>
                 <p>I have developed my Java programming skills through the development of multiple projects. My personal favourite is 
@@ -129,18 +129,18 @@
                 <a href="https://github.com/pjsiri/AI-Chess-Game" target="_blank">Learn More</a>
             </div>
 
-            <div class="service" >
+            <div class="skill" >
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
                 <p>Creating a portfolio website using HTML,CSS, and JavaScript have allowed me to develop my web design and coding skills. 
                     Through this project, I have gained hands-on experience in creating a visually appealing yet simple interfaces. I have incorporated
                     responsive design, and interactive elements.
                 </p>
-                <!-- <a href="https://github.com/pjsiri/Portfolio-website" target="_blank">Learn More</a> -->
+                <a href="https://github.com/pjsiri/Portfolio-website" target="_blank">Learn More</a>
                     
             </div>
 
-            <div class="service" >
+            <div class="skill" >
                 <i class="fa-solid fa-crop"></i>
                 <h2>UI/UX Design</h2>
                 <p>In my IT project management class, I have honed my UI/UX design skills by creating a student job seeking app. Through user research and 
@@ -176,7 +176,7 @@
                         Introducing my maze program! This program is designed to load mazes from text files and employs breadth-first search algorithm 
                         to navigate through the maze, finding the optimal path from starting node to exit node. 
                     </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/pjsiri/Maze-Program" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -191,7 +191,7 @@
                         spreads. Only one phone can repaired a time.
                         I have implemented multi-threading and synchronisation to prevent race conditions.
                     </p>
-                    <a href="https://github.com/pjsiri/AI-Chess-Game" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/pjsiri/Mobile-Virus-Simulator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             
@@ -204,7 +204,7 @@
                         This application utilises the efficient median filtering technique, implemented using the quicksort algorithm, to effectively 
                         remove noise from images. 
                     </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/pjsiri/noise-removing-app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -214,7 +214,7 @@
 </div>
 
 <!-- ---------contact---------- -->
-<div id="contact" class="hidden">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -223,14 +223,13 @@
                     <p><i class="fa-solid fa-envelope"></i>pj.sirisukha.nz@gmail.com</p>
                 </a>
                 <a href="#contact" title="Click to copy!" onclick="copyToClipboard('0223564820')">
-                    <p><i class="fa-solid fa-phone"></i>0223564820</p>
+                    <p><i class="fa-solid fa-phone"></i>(+64) 022-356-4820</p>
                 </a>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/prom-jack-sirisukha" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/pjsiri" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <!-- Attach your updated pdf! -->
-                <div><a href="https://drive.google.com/u/4/uc?id=1O9f5SHth6Pj7gLVMoDvncmCix-XX1nVR&export=download" class="btn btn2" id="downloadBtn">Download CV</a></div>
+                <div><a href="https://drive.google.com/u/4/uc?id=13KaG_H3By-XvBbzPTD0EE6qr_nIayQzI&export=download" class="btn btn2" id="downloadBtn">Download CV</a></div>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -247,8 +246,24 @@
         <p>Made with <i class="fa-solid fa-heart"></i> by Prom Jack Sirisukha</p>
     </div>
 </div>
-  
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script>
+VANTA.GLOBE({
+  el: "#header",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 0.90,
+  scaleMobile: 0.90,
+  color: 0x3f82ff,
+  backgroundColor: 0x70707
+})
+</script>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
